@@ -88,20 +88,18 @@ top:-22px;
     position:relative;
     height:10px;
 }
+.a{
+color:crimson;
+font-size:x-large;
+font-family:cursive;
+}
 </style>
 </head>
 <body>
-	<div class="space">
-		<div class="logo">
-			<img src="logoanjaan.jpg" /> <a href="Contact.jsp">Need Help?</a>
-		    <div class="request">
-		    </div>
-		    <div class="req">
-		    <a href="#">Request Edit</a>
+	
+		<div class="header">
+		<span class=a>S</span><span class=b>kill</span>
 		</div>
-		</div>
-		</div>
-		<div class="header"></div>
 		<div class="Menu">
 			<a href="Home.jsp">Home|</a> <a href="About.jsp">About Us|</a> <a
 				href="Contact.jsp">Contact Us|</a> <a href="Profile.jsp">Profile|</a>

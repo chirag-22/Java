@@ -1,6 +1,7 @@
 
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -39,7 +40,6 @@ public class Register extends HttpServlet {
 	  dob = request.getParameter("dob");
 	  gender = request.getParameter("r3");
 	  role = request.getParameter("r4");
-	  
 	  String Query="Insert into UserRecord values(?,?,?,?,?,?,?,?)";
 	    try {
 	    	Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
