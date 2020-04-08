@@ -27,13 +27,15 @@ public class Register extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String firstName, lastName, email;
+		String firstName, lastName, email, pass , phone;
 		PrintWriter out = response.getWriter();
 
 		firstName = request.getParameter("fname");
 		lastName = request.getParameter("lname");
 		email = request.getParameter("eid");
-		String Query = "Insert into echoes values(?,?,?)";
+		pass = request.getParameter("pass");
+		phone = request.getParameter("phn");
+		String Query = "Insert into echoes values(?,?,?,?,?)";
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			log.info("Driver Loaded");
@@ -44,6 +46,8 @@ public class Register extends HttpServlet {
 			ps.setString(1, firstName);
 			ps.setString(2, lastName);
 			ps.setString(3, email);
+			ps.setString(4, pass);
+			ps.setString(5, phone);
 			
 
 			int count = ps.executeUpdate();

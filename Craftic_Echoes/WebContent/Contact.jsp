@@ -25,7 +25,7 @@
 /* Set gray background color and 100% height */
 .sidenav {
 	padding-top: 20px;
-	background-color: #f3f3f3;
+	background-color: white;
 	height: 100%;
 }
 
@@ -34,6 +34,9 @@ footer {
 	background-color: white;
 	color: white;
 	padding: 15px;
+	font-family: cursive;
+	font-style: italic;
+	font-size: larger;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -49,7 +52,6 @@ footer {
 </style>
 </head>
 <body>
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -79,26 +81,21 @@ footer {
 		</div>
 	</nav>
 
+
+
 	<div class="container-fluid text-center">
 		<div class="row content">
-			<div class="col-sm-2 sidenav">
-				<img src="Images/project-3.jpg" class="img-responsive"
-					style="width: 100%" alt="Image">
-			</div>
+			<div class="col-sm-2 sidenav"></div>
 			<div class="col-sm-8 text-left">
-				<h1>Orange Earrings Model</h1>
-				<p>
-					Orange Earrings Model can be used as Showpeice<br>5cm-130cm
-					Made with paper<br>Free Home Delivery<br>Payment can only
-					be done by Paytm
-				</p>
-				<hr>
-				<button type="button" class="btn btn-success">Buy Now</button>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.5821662591616!2d77.30369631503108!3d28.401685482509418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc34c9dee58d%3A0xcbfaef0853448d39!2sShree%20Banke%20Bihari%20Mandir!5e0!3m2!1sen!2sin!4v1586328511318!5m2!1sen!2sin"
+					width="600" height="450" frameborder="0" style="border: 0;"
+					allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
-			<div class="col-sm-2 sidenavs"></div>
+			<div class="col-sm-2 sidenav"></div>
 		</div>
 	</div>
-
+	<br>
 	<footer class="container-fluid text-center"> </footer>
 
 </body>
