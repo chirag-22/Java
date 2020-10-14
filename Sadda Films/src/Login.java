@@ -42,25 +42,12 @@ public class Login extends HttpServlet {
 			ps.setString(2, pass);
 
 			ResultSet rs = ps.executeQuery();
-			if (rs.next())
+			if (rs != ps)
 			{
-				
-				  if(rs.getString("status").equals("NA"))
-					  request.getRequestDispatcher("Welcome.jsp").forward(request, response);
-				 
-				  else if(!rs.getString("Role").equals("HR")) {
-					Cookie cki = new Cookie("user", rs.getString("FirstName"));
+				Cookie cki = new Cookie("user", rs.getString("FirstName"));
 					response.addCookie(cki);
 					RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
 					rd.forward(request, response);
-				}
-				else {
-					Cookie ck = new Cookie("usr", rs.getString("FirstName"));
-					response.addCookie(ck);
-					RequestDispatcher rd = request.getRequestDispatcher("Approve.jsp");
-					rd.forward(request, response);
-				 }
-				
 			} else {
 				 msg = "Invalid id or password";
 				RequestDispatcher rd = request.getRequestDispatcher("login.jsp?err=" + msg);

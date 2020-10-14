@@ -53,7 +53,7 @@ public class Register extends HttpServlet {
 			int count = ps.executeUpdate();
 			if (count > 0) {
 				log.info("Record Added");
-				RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("Login.html");
 				rd.forward(request, response);
 			} else {
 				log.info("Failed add operation");
