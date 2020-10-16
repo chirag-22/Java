@@ -12,7 +12,6 @@
 <meta name="google-signin-client_id"
     content="1092644277096-fr7rjfullv9u6jgk56hi64eje3q4tg7s.apps.googleusercontent.com">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-
 <script class="external"></script>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -27,7 +26,7 @@
 <button> <a href="https://drive.google.com/drive/my-drive" >Google Drive</a></button>
 
 <script >
-  window.___gcfg = {
+  window.___gcfg = { 
     parsetags: 'onload'
   };
 </script>

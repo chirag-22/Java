@@ -4,7 +4,7 @@
 
 //Include Configuration File
 include('config.php');
-
+include('config1.php');
 $login_button = '';
 
 
@@ -158,6 +158,7 @@ if($num == 0){
     header('location:Home.php');
    }
    ?>
+   <a href="<?php echo $login_url;?>">Login With Facebook </a>
 	
 						</form>
 
