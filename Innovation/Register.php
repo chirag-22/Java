@@ -35,7 +35,16 @@ if(isset($_POST['submit'])){
     }else{
         $insertquery="insert into echoes (FirstName, LastName, Email, Password, Phone) values('$FirstName','$LastName','$Email','$pass','$Phone')";
 		$iquery=mysqli_query($conn, $insertquery);
-		header('location:index.php');
+	    include'validate.php';
+	   $action_time = date("Y/m/d h:m:s");
+	   $update_trail = "insert into audit_trail(user_id,action_time,action_performed) values('$Email','$action_time','$FirstName Registered an account')";
+	if(mysqli_query($conn, $update_trail)){
+
+		header('location:index.php');}
+	else{
+	  mysqli_error($conn);
+	}
+
      
     }
 }

@@ -1,3 +1,6 @@
+<?php
+    include('nav.php');
+ ?>
 <html>
 <head>
 <link rel="stylesheet"
@@ -22,9 +25,9 @@
 <!--<div class="g-sharetoclassroom" data-size="60" data-url="..." ></div>
 <button> <a href="https://drive.google.com/drive/mobile/folders/1ybOvW-UkQmpyKUyUqT1_Jg6BvP9sIjxh?ogsrc=32&tab=mo&sort=13&direction=a" >Google Drive</a></button>
 </div> -->
-<button> <a href="https://classroom.google.com/c/MTgwMDQxMDY2OTQ4?cjc=x7pcbkv" >Google Classroom</a></button>
-<button> <a href="https://drive.google.com/drive/my-drive" >Google Drive</a></button>
-
+ <a href="https://classroom.google.com/c/MTgwMDQxMDY2OTQ4?cjc=x7pcbkv" ><img src="gs2.png" height="80" width="80" class="rounded-circle" alt="Cinque Terre"></a>
+ <a href="https://drive.google.com/drive/my-drive" ><img src="googledrive.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre"></a>
+ <a href="https://jamboard.google.com/d/1fXB_O97e_6bS-bL4CT0dl8EySRH3t_jUwwDVkdpbWB4/viewer?f=0"><img src="googlejam.png" height="80" width="80" class="rounded-circle" alt="Cinque Terre"></a>
 <script >
   window.___gcfg = { 
     parsetags: 'onload'

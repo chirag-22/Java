@@ -25,7 +25,7 @@ if(isset($_GET["code"]))
 
   $google_service = new Google_Service_Oauth2($google_client);
 
- 
+ session_start(); 
   $data = $google_service->userinfo->get();
 
  
@@ -50,7 +50,7 @@ if(isset($_GET["code"]))
 
   if(!empty($data['picture']))
   {
-   $_SESSION['user_image'] = $data['picture'];
+   $_SESSION['user_img'] = $data['picture'];
   }
  }
 }
@@ -155,11 +155,22 @@ if($num == 0){
 							<?php
    if($login_button == '')
    {
-    header('location:Home.php');
+	include'validate.php';
+	$Email = $_SESSION['user_email_address'];
+	$Name = $_SESSION['user_first_name'];
+	$action_time = date("Y/m/d h:m:s");
+	$update_trail = "insert into audit_trail(user_id,action_time,action_performed) values('$Email','$action_time','$Name Logined')";
+	if(mysqli_query($conn, $update_trail)){
+	 header('location:Home.php');}
+	else{
+	  mysqli_error($conn);
+	}
+    
    }
    ?>
-   <a href="<?php echo $login_url;?>">Login With Facebook </a>
-	
+   <div class="container p-1 mr-0" style="position:relative;right:-17px">
+    <a href="<?php echo $login_url;?>"class="mx-auto btn btn-primary ml-1 mr-3 mt-2 btn btn-primary form-control">Login With Facebook </a>
+	</div>
 						</form>
 
 
