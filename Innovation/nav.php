@@ -15,7 +15,7 @@
 <meta name="google-signin-client_id"
 	content="1092644277096-65cpijv4nr08vkftodspohtcbsf2c71a.apps.googleusercontent.com">
 </head>
-<body>
+<body >
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <img class="" height="50" width="50" src="Logo.jpg" alt="">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +26,14 @@
       <li class="nav-item ">
         <a class="nav-link" href="Home.php">Home <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="Contact.php">Contact <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item ">
+        <a class="nav-link" href="try.php">Google Services <span class="sr-only">(current)</span></a>
+      </li>
+      
       </ul>
       <ul class="navbar-nav ml-auto">
       <li class="nav-item ">

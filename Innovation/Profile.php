@@ -8,7 +8,7 @@ include('nav.php');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark text-white">
 <?php
  session_start();
  include'validate.php';
@@ -25,16 +25,14 @@ if(isset($_SESSION["user_email_address"])){
       $row = $result->fetch_assoc();
    };
 ?>
-<div class="shadow-lg card col-sm-5 mt-5 mx-auto white"
-					style="border-radius: 10px;">
-               <div class="form-group">
-               <div class="input-group m-3">
+<div class="row pt-3">
+<div class="col-sm-1 pl-0">
 <?php
  if(isset($_SESSION["user_image"])){
- echo '<img src="'.$_SESSION["user_image"].'" class="img-responsive img-circle img-thumbnail" />';
+ echo '<img  src="'.$_SESSION["user_image"].'" class="img-responsive img-circle img-rounded" />';
 }
 if(isset($_SESSION["user_img"])){
-   echo '<img src="'.$_SESSION["user_img"].'" class="img-responsive img-circle img-thumbnail" />';
+   echo '<img src="'.$_SESSION["user_img"].'" class="img-responsive img-circle img-rounded" />';
   }
 ?>
 </div>
@@ -56,18 +54,15 @@ if(isset($_SESSION["user_last_name"])){
 <div class="input-group ml-3 mb-3 mt-4">
 <?php
   if(isset($row)){
- echo '<h3><b>Country :</b> '.$row["Country"].' </h3>';
- echo '<h3><b>City :</b> '.$row["City"].'</h3><br>';
- echo '<h3><b>Class :</b> '.$row["Class"].' </h3><br>';}           
+ echo '<h3><b>Country :</b> '.$row["Country"].'</h3>';
+ echo '<h3><b>City :</b> '.$row["City"].'</h3>';
+ echo '<h3><b>Class :</b> '.$row["Class"].' </h3>';}           
 ?>
 </div>
   
    <form action="profile2.php" method="POST">
 <button type="submit" class="ml-3 mr-3 mt-2 btn btn-primary form-control">Update</button>
 </form>
-
-</div>
-</div>
 
 </body>
 </html>

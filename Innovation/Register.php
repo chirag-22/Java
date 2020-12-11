@@ -10,7 +10,7 @@
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body style="">
+<body class="bg-dark">
 <?php
 
 include 'regist.php';

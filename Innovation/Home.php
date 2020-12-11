@@ -18,33 +18,22 @@
 <meta name="google-signin-client_id"
 	content="1092644277096-65cpijv4nr08vkftodspohtcbsf2c71a.apps.googleusercontent.com">
 </head>
-<body>
-   
-	<div class="row">
-		<div class="col-sm-12 mx-auto">
-		<div class="row ml-5 pl-5">
-			<div class="col-sm-6 mr-0 pr-0">
-				<p class="text-right card-title mt-4 mb-4 font-weight-bolder">
-					<span style="font-size: 100px;">&#128075;</span>
-				</p>
-			</div>
-			<div class="col-sm-6 mr-0 mt-5 pl-0">
-				<h1 style="font-size:50px"class="text-left card-title mt-4 mb-4 font-weight-bolder">Welcome!</h1>
-			</div>
-			</div>
-			<h2 class="text-center card-title mt-4 mb-4 ">It is an
-				Educational Application for students</h2>
-				<div class="col-sm-12 ml-5 text-center">
-				<img src="me.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre">
-				<img src="Diksha.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre">
-				<img src="avantika.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre">
-				<img src="ankit.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre">
-				<img src="shweta.jpg" height="80" width="80" class="rounded-circle" alt="Cinque Terre">
-				<br><br><a href="try.php">Click here to use Google Apps</a>
-		</div>
+<body class="bg-dark text-white">
+	<div class="row ">
 		
+	<div class="col-sm-11 pr-0 pt-5 mt-5
+	text-center">
+	<h1><i>The Leaders are made, not born</i></h1><br>
+	<h4><i>Education is the most powerful weapon which <br>you can use to change the world.</i></h4>
+		  
+	
 		</div>
-
+		<div class="col-sm-5 ml-5 pl-5">
+	<img src="education.jpg" height="450" width="450" class="rounded shadow" alt="Cinque Terre">
+    </div>
+	<div class="col-sm-5 text-right">
+	<img src="learn.jpg" height="450" width="450" class="rounded shadow" alt="Cinque Terre">
+    </div>
 	</div>
 <script class="external"></script>
 </body>

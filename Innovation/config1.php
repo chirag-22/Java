@@ -3,7 +3,6 @@
 require_once 'vendor/autoload.php';
 
 
-
 $fb = new Facebook\Facebook([
      
     'app_id' => '3687327537983036',
